@@ -1,13 +1,15 @@
 <?xml version="1.0"?>
-<!DOCTYPE liferay-portlet-app PUBLIC "-//Liferay//DTD Portlet Application 6.0.0//EN" "http://www.liferay.com/dtd/liferay-portlet-app_6_0_0.dtd">
+<!DOCTYPE liferay-portlet-app PUBLIC "-//Liferay//DTD Portlet Application 6.1.0//EN" "http://www.liferay.com/dtd/liferay-portlet-app_6_1_0.dtd">
 
 <liferay-portlet-app>
 	<portlet>				
 		<portlet-name>CompactTagsPortlet</portlet-name>
 		<icon>/icon.png</icon>
-		<instanceable>true</instanceable>		
+		<instanceable>true</instanceable>	
 		<private-request-attributes>false</private-request-attributes>
-   		<private-session-attributes>false</private-session-attributes> 				
+   		<private-session-attributes>false</private-session-attributes>
+   		<header-portlet-javascript>/js/jquery-1.7.2.min.js</header-portlet-javascript>
+		<footer-portlet-javascript>/js/jquery.tabSlideOut.v1.3.js</footer-portlet-javascript>
 	</portlet>
 	<role-mapper>
 		<role-name>administrator</role-name>

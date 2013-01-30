@@ -1,8 +1,5 @@
 <%@ include file="/init.jsp" %>
 
-<script src="<%= request.getContextPath() %>/js/jquery-1.6.2.min.js" type="text/javascript"></script>
-<script src="<%= request.getContextPath() %>/js/jquery.tabSlideOut.v1.3.js" type="text/javascript"></script>
-
 <script type="text/javascript">
 $(function(){
     $('.slide-out-div').tabSlideOut({
@@ -92,7 +89,8 @@ $(function(){
 		classNameId="0"
 		displayStyle="cloud"
 		hidePortletWhenEmpty="true"
+		maxAssetTags="100"
 		showAssetCount="true"
-		showZeroAssetCount="false"/>   
+		showZeroAssetCount="true"/>   
 </div>
  
