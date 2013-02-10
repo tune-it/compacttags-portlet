@@ -8,7 +8,7 @@
 >
 	<portlet>
 		<portlet-name>CompactTagsPortlet</portlet-name>
-		<display-name>CompactTagsPortlet</display-name>
+		<display-name>Compact Tags</display-name>
 		<portlet-class>com.liferay.util.bridges.mvc.MVCPortlet</portlet-class>
 		<init-param>
 			<name>view-jsp</name>
@@ -19,9 +19,9 @@
 			<mime-type>text/html</mime-type>
 		</supports>
 		<portlet-info>
-			<title>CompactTagsPortlet</title>
-			<short-title>CompactTagsPortlet</short-title>
-			<keywords>CompactTagsPortlet</keywords>
+			<title>Compact tags</title>
+			<short-title>Compact tags</short-title>
+			<keywords>Compact tags</keywords>
 		</portlet-info>
 		<security-role-ref>
 			<role-name>administrator</role-name>
