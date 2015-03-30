@@ -1,21 +1,27 @@
 <%@ include file="/init.jsp" %>
 
 <script type="text/javascript">
-$(function(){
-    $('.slide-out-div').tabSlideOut({
-        tabHandle: '.handle',                     //class of the element that will become your tab
-        pathToTabImage: '/icon.png', //path to the image for the tab //Optionally can be set using css
-        imageHeight: '100px',                     //height of tab image           //Optionally can be set using css
-        imageWidth: '34px',                       //width of tab image            //Optionally can be set using css
-        tabLocation: 'right',                      //side of screen where tab lives, top, right, bottom, or left
-        speed: 300,                               //speed of animation
-        action: 'click',                          //options: 'click' or 'hover', action to trigger animation
-        topPos: '125px',                          //position from the top/ use if tabLocation is left or right
-        leftPos: '20px',                          //position from left/ use if tabLocation is bottom or top
-        fixedPosition: true                      //options: true makes it stick(fixed position) on scroll
-    });
-
-});
+    var tagsLoaded = false;
+    
+    Liferay.Portlet.ready(
+        function(){
+            if(tagsLoaded === false) {
+                tagsLoaded = true;
+                $('.slide-out-div').tabSlideOut({
+                    tabHandle: '.handle',           //class of the element that will become your tab
+                    pathToTabImage: '/icon.png',    //path to the image for the tab //Optionally can be set using css
+                    imageHeight: '100px',           //height of tab image           //Optionally can be set using css
+                    imageWidth: '34px',             //width of tab image            //Optionally can be set using css
+                    tabLocation: 'right',           //side of screen where tab lives, top, right, bottom, or left
+                    speed: 300,                     //speed of animation
+                    action: 'click',                //options: 'click' or 'hover', action to trigger animation
+                    topPos: '125px',                //position from the top/ use if tabLocation is left or right
+                    leftPos: '20px',                //position from left/ use if tabLocation is bottom or top
+                    fixedPosition: true             //options: true makes it stick(fixed position) on scroll
+                });
+            }
+        }
+    );
 
 </script>
     
