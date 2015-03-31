@@ -6,7 +6,7 @@
     <artifactId>compacttags-portlet</artifactId>
     <packaging>war</packaging>
     <name>compacttags-portlet</name>
-    <version>6.2.2.1</version>
+    <version>6.2.2.2</version>
     <build>
         <plugins>
             <plugin>
